@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin_style.css">
+    <title>Admin Interface</title>
+</head>
+<body>
+    <h1>Admin Interface</h1>
+    <hr>
+    <form id="roundForm">
+        <h2 id="currentDisplayRound">Current Display Round: </h2>
+        <label for="displayRound">Display Round:</label>
+        <select id="displayRound" name="displayRound">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br><br>
+        <input type="submit" value="Set Round">
+    </form>
+    <hr>
+    <br>
+    <h2>New Entry</h2>
+<form id="adminForm">
+    <label for="userId">Contestant User ID:</label>
+    <input type="text" id="userId" name="userId" required><br><br>
+
+    <label for="round">Round:</label>
+    <select id="round" name="round">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select><br><br>
+
+    <label for="timeBeforePenalties">Time Before Penalties (MM:SS):</label>
+    <input type="text" id="timeBeforePenalties" name="timeBeforePenalties" required pattern="\d{2}:\d{2}" title="Time must be in MM:SS format"><br><br>
+
+    <h3>Issues with the Shucking:</h3>
+    <label for="missingOysters">Missing Oysters:</label>
+    <input type="number" id="missingOysters" name="missingOysters" min="0" required><br><br>
+
+    <label for="notPlacedProperly">Not Placed Properly:</label>
+    <input type="number" id="notPlacedProperly" name="notPlacedProperly" min="0" required><br><br>
+
+    <label for="brokenShell">Broken Shell:</label>
+    <input type="number" id="brokenShell" name="brokenShell" min="0" required><br><br>
+
+    <label for="gritBloodOther">Grit, Blood, or Other:</label>
+    <input type="number" id="gritBloodOther" name="gritBloodOther" min="0" required><br><br>
+
+    <label for="cutOysters">Cut Oysters:</label>
+    <input type="number" id="cutOysters" name="cutOysters" min="0" required><br><br>
+
+    <label for="notSevered">Not Severed:</label>
+    <input type="number" id="notSevered" name="notSevered" min="0" required><br><br>
+
+    <label for="bonus">Bonus (MM:SS):</label>
+    <input type="text" id="bonus" name="bonus" required pattern="\d{2}:\d{2}" title="Time must be in MM:SS format"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+    <hr>
+    <h2>Current Leaderboard</h2>
+    <!-- Tabs for Rounds -->
+<div id="roundTabs">
+    <!-- Tabs will be dynamically added here by JavaScript -->
+</div>
+
+<!-- Table to Display Times -->
+<table id="adminLeaderboard">
+    <thead>
+        <tr>
+            <th>Contestant Name</th>
+            <th>Round</th>
+            <th>Time Before Penalties</th>
+            <th>Final Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Data will be dynamically inserted here using JavaScript -->
+    </tbody>
+</table>
+<br><br>
+<hr>
+<br><br>
+<h2>Contestant Management</h2>
+<form id="contestantForm">
+    <label for="contestantName">Contestant Name:</label>
+    <input type="text" id="contestantName" name="contestantName" required><br><br>
+
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" name="userId" required><br><br>
+
+    <input type="submit" value="Add Contestant">
+</form>
+<h2>Contestants</h2>
+<table id="contestantsTable">
+    <thead>
+        <tr>
+            <th>Contestant Name</th>
+            <th>User ID</th>
+            <th>Admin</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Data will be dynamically inserted here using JavaScript -->
+    </tbody>
+</table>
+
+<hr>
+<!-- [Rest of your previous HTML remains the same] -->
+    <script src="admin_script.js"></script>
+</body>
+</html>

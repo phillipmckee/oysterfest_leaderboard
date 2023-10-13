@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.socket.io/4.4.0/socket.io.min.js" crossorigin="anonymous"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oyster Shucking Leaderboard</title>
+</head>
+<body>
+    <h1>Oysterfest Leaderboard</h1>
+    <h2 id="currentRound">Current Round: Loading...</h2>
+    <table id="leaderboard">
+        <thead>
+            <tr>
+                <th>Place</th>
+                <th>Contestant Name</th>
+                <th>Time Before Penalties</th>
+                <th>Final Time</th>
+            </tr>
+        </thead>        
+        <tbody>
+            <!-- Data will be dynamically inserted here using JavaScript -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

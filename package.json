@@ -1,0 +1,18 @@
+{
+  "name": "oyster_leaderboard",
+  "version": "1.0.0",
+  "description": "A real-time updating leaderboard for an oyster shucking competition.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.1",
+    "socket.io": "^4.7.2"
+  }
+}
