@@ -261,7 +261,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         e.preventDefault();
 
         const name = document.getElementById('contestantName').value;
-        const userId = document.getElementById('userId').value;
+        const userId = document.getElementById('contestantUserId').value;
 
         const formData = {
             name: name,

@@ -1,57 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f1fafa; /* Light blue background for a marine vibe */
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-header, h1 {
-    color: #333;
-    background-color: #4CAF50;
-    padding: 15px;
+h1 {
+    color: #ffffff;
+    background-color: #2C3E50; /* Dark Blue */
+    padding: 20px;
     margin-bottom: 20px;
+    font-size: 3em; /* Larger text for readability on a public display */
+}
+
+h2 {
+    color: #2C3E50;
+    font-size: 2em;
 }
 
 table {
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Slightly larger shadow for a subtle 3D effect */
 }
 
 th, td {
-    padding: 15px;
+    padding: 20px; /* Larger padding for better spacing of public display data */
     border: 1px solid #ccc;
-    font-size: 1.2em;  /* Increase the font size */
+    font-size: 1.5em; /* Larger font size for readability on a public display */
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* Light grey for even rows */
+    background-color: #d8eefe; /* Lighter blue for even rows */
 }
 
-tr:nth-child(odd) {
-    background-color: #ffffff; /* White for odd rows */
-}
 th {
-    background-color: #4CAF50;
+    background-color: #2C3E50; /* Dark Blue */
     color: white;
 }
 
 .final-time {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 2em; /* Increase font size */
+    color: #27AE60; /* A bold green color for visibility */
 }
 
+
 .penalties {
-    color: #d9534f;
+    color: #E74C3C; /* Red for penalties, indicating a negative (worse) metric */
 }
 
 .new-entry {
-    background-color: yellow; 
+    background-color: #F9E79F; /* Light yellow for new entry */
     transition: background-color 1s ease-out;
 }
 
+a {
+    color: #2C3E50;
+    font-size: 0.8em; /* Smaller font size */
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #f1fafa; /* Same color as the body background */
+    padding: 5px 10px; /* Smaller padding */
+    border-radius: 5px;
+    position: fixed; /* Fixed position */
+    bottom: 10px; /* Position it at the bottom */
+    right: 10px; /* Position it at the right */
+    transition: background-color 0.3s ease-out;
+}
 
+a:hover {
+    background-color: #d8eefe; /* Light blue on hover, just a subtle change */
+}
+
+td:first-child {
+    font-weight: bold;
+    font-size: 1.7em; /* Slightly larger font size than the rest of the data */
+}
